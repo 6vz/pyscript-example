@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python in HTML?</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script> 
+    <script src="https://kit.fontawesome.com/4943fd313f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+          <h1 class="title">Python, in HTML, is that even possible?<br></h1>
+          <p class="subtitle font">
+            <br>It turns out that it does! You can use Python in HTML - it may look ridiculous, but it's functional. Using the PyScript plugin, you can execute Python code in HTML. Just use the <code>py-script</code> tag
+            <div class="notification is-info">
+                Press Ctrl + Shift + I (windows and mac), or Cmd + Opt + I (mac) to open the developers Tools, and see Scripts and Action
+              </div>
+          </p><br>
+          <h1 class="title">Some basic Examples...<br></h1>
+          Input: <br><code>
+              print('Hello World!')
+          </code>
+          <br>
+          Output: <code><py-script>print('Hello World!')</py-script></code>
+          <br><br>
+          Input: <br><code>
+            name = "Alexander"<br>
+            print("Hello " + name + "!")
+        </code>
+        <br>
+        Output: <code><py-script>name = "Alexander"
+print("Hello " + name + "!")</py-script></code>
+        </py-script></code>
+        <br><br>
+          Input: <br><code>
+            name = "Vadim"<br>
+            if name == "Vadim":<br>
+                print("Hello " + name + "!")
+            else:<br>
+                print("Hello Stranger!")
+        </code>
+        <br>
+        Output: <code><py-script>name = "Vadim"
+if name == "Vadim":
+    print("Hello " + name + "!")
+else:
+    print("Hello Stranger!")</py-script></code>
+        </py-script></code>
+        <br><br>
+          Input: <br><code>a = 2<br>b = 3<br>print(a+b)</code>
+        <br>
+        Output: <code><py-script>a = 2
+b = 3
+print(a+b)</py-script></code>
+<br><br>
+          Input: <br><code>
+            import platform<br>
+        print(platform.python_version())
+        </code>
+        <br>
+        Output: <code><py-script>import platform
+print(platform.python_version())</py-script></code>
+<br><br>
+<h1 class="title">Closing speech<br></h1>
+<p class="subtitle">
+    As you can see, the possibilities of this tool are practically endless - even though everything is still in Beta, I think it can have an effect. Thank you for taking part in my TedED talk, I hope you enjoyed it
+</p>
+<br>
+<br>
+<h1 class="title">
+    Links
+</h1>
+<p class="subtitle"><a href="https://pyscript.net/">Official py-script website</a> &middot; <a href="https://github.com/pyscript/pyscript">Official py-script Github</a> &middot; <a href='https://github.com/6vz/pyscript-example'>Source-code of this website</a></p>
+        </div>
+
+      </section>
+</body>
+</html>
